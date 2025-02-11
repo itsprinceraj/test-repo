@@ -7,7 +7,8 @@ export const AppDataSource = new DataSource({
   username: "postgres",
   password: "5466",
   database: "typeorm_db",
-  entities: ["src/users/*{.ts,.js}"],
+  port: 5432,
+  entities: ["src/courses/*{.ts,.js}"],
   synchronize: true,
   //   logging: true,
 });
